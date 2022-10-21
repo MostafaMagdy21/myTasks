@@ -1,0 +1,31 @@
+class expensesView extends React.Component {
+
+    calculateTotalPrice = () => {
+        let totalPrice = 0
+        this.props.items.map(item => (
+            totalPrice += Number(item.price)
+        ));
+
+        return (totalPrice)
+    }
+
+    render() {
+        return (
+            <div className="container text-center">
+                <h1 className="m-5">Expenses Calculator</h1>
+                <h3 className="m-5">
+                    Your total experses are <span className="total-expenses">
+                        {
+                            (this.props.items.length) ? this.calculateTotalPrice() : 0
+                        }
+                    </span> EGP
+                </h3>
+                <h3 className="m-5">You have <span className="items-number">
+                    {this.props.items.length}
+                </span> items in your exprnses list</h3>
+            </div>
+        );
+    }
+}
+
+export default expensesView;

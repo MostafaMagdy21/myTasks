@@ -1,0 +1,32 @@
+*{
+    letter-spacing: 1.5px;
+}
+
+.nav{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.nav a{
+    color: #fff;
+    font-size: large;
+}
+
+.nav a:hover{
+    color: #ddd;
+}
+
+.content{
+    margin-top: 80px;
+}
+
+.content h3{
+    margin-top: 60px;
+}
+
+.contentapp{
+    margin-top: 80px;
+}
